@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>toDoList</title>
+   <link rel="stylesheet" href="todolist.css">
+</head>
+<body >
+    <h1 class="maxHead">To_Do_List</h1>
+   <div class="addthing">
+               <label for="thing" class="lab2">任务添加：</label>
+               <input type="text" placeholder="在此输入任务并按回车键结束" id="thing" class="adding" onkeypress="getKey();">
+               <input type="button" value="清空列表" class="deleteAll" onclick="deleteAll()" >
+   </div>   
+                  
+    <section class="list">
+        <h3 class="list-head">正在进行中的任务：</h3>
+        <ul class="list-item" id="dolist">
+        </ul>
+    </section>
+               
+         <script src="todolist.js"></script>   
+     </body>
+</html>
